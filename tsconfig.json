@@ -19,10 +19,28 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "jszip": ["node_modules/jszip/dist/jszip.min.js"],
+      "globalize": ["node_modules/globalize/dist/globalize"],
+      "globalize/*": ["node_modules/globalize/dist/globalize/*"],
+      "cldr": ["node_modules/cldrjs/dist/cldr"],
+      "cldr/*": ["node_modules/cldrjs/dist/cldr/*"],
+      "@assets/*": ["projects/header/src/assets/*"],
+      "@components/*": ["projects/header/src/app/components/*"],
+      "@directives/*": ["projects/header/src/app/directives/*"],
+      "@environment": ["projects/header/src/environments/environment.ts"],
+      "@interceptors/*": ["projects/header/src/interceptors/*"],
+      "@guards/*": ["projects/header/src/app/guards/*"],
+      "@layouts/*": ["projects/header/src/app/layouts/*"],
+      "@models/*": ["projects/header/src/app/models/*"],
+      "@pipes/*": ["projects/header/src/app/pipes/*"],
+      "@services/*": ["projects/header/src/app/services/*"],
+      "@route-wrappers/*": ["projects/header/src/app/route-wrappers/*"],
+      "@tab-views/*": ["projects/header/src/app/tab-views/*"],
+      "@utils/*": ["projects/header/src/app/utils/*"],
+      "@constants/*": ["projects/header/src/app/constants/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
